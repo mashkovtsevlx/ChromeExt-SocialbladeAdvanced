@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Socialblade Advanced",
+  "version": "1.0",
+  "description": "Shows youtuber average views and engagement rate when on 'User Videos' Socialblade page",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://socialblade.com/youtube/c/*/videos"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
